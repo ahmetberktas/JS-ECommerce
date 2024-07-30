@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header>
+      <h1>E-Commerce</h1>
+      <input type="text" placeholder="Enter Product Name" />
+      <div>
+        <button class="basket">Basket</button>
+        <button class="register">Register</button>
+        <button class="login">Login</button>
+      </div>
+    </header>
+
+    <!-- İÇERİKLER -->
+    <main>
+      <!-- Kategoriler -->
+      <section id="category-section">
+        <h1>Categories</h1>
+        <div class="categories"></div>
+      </section>
+      <!-- Ürünler -->
+      <section id="product-section">
+        <h1>Product</h1>
+        <div class="products"></div>
+      </section>
+    </main>
+
+    <!-- SEPET MODAL -->
+    <div class="modal-wrapper">
+      <div class="modal">
+        <div id="btn-wrapper">
+          <img id="close-btn" src="./assets/images/close.png" alt="" />
+        </div>
+        <div id="list"></div>
+        <div id="total">
+          <span class="count">0 Product</span>
+          Toplam:
+          <span class="price">0 </span>$
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
